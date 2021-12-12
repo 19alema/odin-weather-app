@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- LINK TO CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <section class="app-container">
+       <h1 class="title">Weather Info of Any City</h1>
+       <div class="app">
+           <header class="app-header">
+              <div class="header-info">
+                <p class="date">12 Dec 2020</p>
+                <h3 class="city-name">City Name, Country</h3>
+              </div>
+              <div class="inputs">
+                  <input type="text" name="text" id="input-city" class="input-city"
+                   placeholder="Enter City Name"
+                  >
+
+                  <button class="btn">
+                      Search
+                  </button>
+              </div>
+              <p class="para"></p>
+           </header>
+      
+
+       <div class="app-main">
+           <div class="app-main-upper">
+               <h2>Temperature</h2>
+               <h1 class="temeperature">
+              
+                   <span class="temp-display">0</span>
+                   <div>
+                    <span class="celicius">
+                        <sup>o</sup> C
+                    </span> 
+                            | 
+                    <span class="fereheint">
+                        <sup>o</sup> F
+                        </span>
+                    </div>
+               </h1>
+           </div>
+           <div class="app-main-lower">
+            <div class="app-lower-content">
+                <div class="weather-infor">
+                    <h4>Humidity</h4>
+                    <p class="humidity">0%</p>
+                </div>
+            </div>
+            <div class="app-lower-content">
+                <div class="weather-infor">
+                    <h4>Wind</h4>
+                    <p class="wind">0km/hr</p>
+                </div>
+            </div>
+            <div class="app-lower-content">
+                <div class="weather-infor">
+                    <h4>Pressure</h4>
+                    <p class="pressure">0 Pa</p>
+                </div>
+            </div>
+           </div>
+       </div>
+</div>
+   </section>
+    
+    <!-- Link to JS FILE -->
+    <script src="index.js"></script>
+</body>
+</html>

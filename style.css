@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500;700;800&display=swap');
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+    list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+    scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+    min-height: 100vh;
+    font-family: "Rubik";
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+    background-image: url(" https://media.istockphoto.com/photos/sky-full-of-stars-picture-id512250305?b=1&k=20&m=512250305&s=170667a&w=0&h=x_Y7xuAMU6llJlKGm7dXDZsCitof4mYGH0YmUasFha8=");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+    max-width: 100%;
+    display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+    html:focus-within {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+:root {
+    --dark-color: #0B1D2B;
+    --light-brown: #E6E4A9;
+    --light-gray: #40606F;
+    --light-darkgreen: #3A5B55;
+    --light-blue: #64C8E4;
+    --very-light-gray: #69889F;
+
+    /* FONT-WEIGHTS */
+
+    --lg-weight: 500;
+    --moderate-weight: 700;
+    --bold-weight: 800;
+}
+
+.para {
+    color: crimson;
+    padding-top: 10px;
+    text-transform: uppercase;
+}
+
+.celicius,
+.fereheint {
+    cursor: pointer;
+}
+.celicius:focus,
+.fereheint:focus,
+.celicius:active,
+.fereheint:active {
+    color: var(--dark-color)
+}
+
+/* WEARGER APP */
+
+.temp-display {
+    font-size: 8rem
+}
+.app-container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 10px;
+}
+.title {
+    padding: 2rem 0;
+    text-transform: uppercase;
+    color: yellow
+}
+
+.input-city, .btn {
+    padding: .5rem 20px;
+    border-radius: 5px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    margin-top: .5rem;
+}
+
+.app-header {
+    text-align: center;
+    padding: 2rem;
+    background: var(--dark-color);
+    border-radius: 5px;
+}
+.header-info {
+    padding: .5rem;
+
+}
+.city-name {
+    font-size: 2rem
+}
+
+.app { 
+    padding: 1rem 10px;
+    width: 100%;
+    max-width: 800px;
+    background: var(--very-light-gray);
+    border-radius: 5px;
+}
+
+.app-main-upper {
+    padding: .75rem 0;
+}
+
+.app-main-lower {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding: 20px;
+    background: var(--dark-color);
+    border-radius: 5px;
+}
+.app-main {
+    text-align: center;
+}
+.weather-infor {
+    text-align: center;
+    padding: 0 25px;
+}
+
+@media(max-width: 500px) {
+    .temp-display {
+        font-size: 2em;
+    }
+    .btn {
+        display: block;
+        
+    }
+    input {
+        width: 100%;
+    }
+    .city-name {
+        font-size: 16px;
+    }
+    .app-header {
+        padding: .75em
+    }
+    .app-main-lower {
+        padding: 10px;
+    }
+
+    .app-main {
+        text-align: center;
+    }
+
+    .weather-infor {
+        text-align: center;
+        padding: 0 10px;
+    }
+    .app-main-upper {
+        padding: .5rem 0;
+    }
+    .app-container {
+        height: unset;
+    }
+}
